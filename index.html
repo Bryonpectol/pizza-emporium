@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pizza Emporium</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+    
+        <div class="headdiv">
+        <header>
+            <nav>
+                <h1 id="headtitle">Pizza Emporium</h1>
+            </nav>
+        </header>
+        </div>
+
+        <main>
+            <button id="buildBtn" class="buildBtn" onclick="build()">Build Your Custom Pizza</button>
+
+            <p id="total">Your Pizza:</p>
+
+            <form id="buildForm">
+                <h2>Customize Your Own Pizza</h2>
+                <hr />
+                <h3>Crust:</h3>
+                <select id="crust" required>
+                    <option class="option">Select a Crust</option>
+                    <option class="option">Regular (+$5)</option>
+                    <option class="option">Pretzel (+$7)</option>
+                </select>
+
+                <h3>Sauce:</h3>
+                <select id="sauce" required>
+                    <option class="optionSauce">Select a Sauce</option>
+                    <option class="optionSauce">Red Sauce (+$0)</option>
+                    <option class="optionSauce">Alfredo Sauce (+$0.75)</option>
+                    <option class="optionSauce">Ranch (+$0.50)</option>
+                    <option class="optionSauce">BBQ Sauce (+$0.50)</option>
+                </select>
+
+                <h3>Cheese:</h3>
+                <div class="checkbox">
+                <label class="checkboxInput">Chedder
+                <input id="chedder" type="checkbox" value="Chedder" /></label>
+                <br />
+                <label class="checkboxInput">Alfredo
+                <input id="alfredo" type="checkbox" value="Alfredo" /></label>
+                <br />
+                <label class="checkboxInput">Mozerella
+                <input id="mozerella" type="checkbox" value="Mozerella" /></label>
+                </div>
+
+                <h3>Toppings:</h3>
+                <div class="checkbox">
+                    <label class="checkboxInput">Pepperoni (+$0)
+                    <input id="pepperoni" type="checkbox" value="Pepperoni" /></label>
+                    <br />
+                    <label class="checkboxInput">Sausage (+$0.50)
+                    <input id="sausage" type="checkbox" value="Sausage" /></label>
+                    <br />
+                    <label class="checkboxInput">Green Peppers (+$0.25)
+                    <input id="greenPepper" type="checkbox" value="Green Peppers" /></label>
+                    <br />
+                    <label class="checkboxInput">Bell Peppers (+$0.25)
+                    <input id="bellPepper" type="checkbox" value="Bell Peppers" /></label>
+                    <br />
+                    <label class="checkboxInput">Bacon (+$0.95)
+                    <input id="bacon" type="checkbox" value="Bacon" /></label>
+                    </div>
+
+                    <input type="button" class="buildBtnSmall" onclick="finish()" value="Build"/>
+            </form>
+
+        </main>
+
+        <footer>
+
+        </footer>
+        
+        <script src="/js/main.js" async defer></script>
+    </body>
+</html>
